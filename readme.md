@@ -6,7 +6,6 @@
 
 A powerful, real-time network packet sniffer and analyzer written in Python. Capture, analyze, and visualize network traffic with detailed protocol information and security alerts.
 
-![Packet Sniffer Demo](docs/demo.gif)
 
 ## ✨ Features
 
@@ -30,8 +29,8 @@ A powerful, real-time network packet sniffer and analyzer written in Python. Cap
 
 ```bash
 # Clone the repository
-git clone https://github.com/VulnSeeker/network-packet-sniffer.git
-cd network-packet-sniffer
+git clone https://github.com/VulnSeeker/Packet_sniffer.git
+cd Packet_sniffer
 
 # Install dependencies
 pip install -r requirements.txt
