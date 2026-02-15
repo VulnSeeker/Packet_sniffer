@@ -115,8 +115,7 @@ sudo python3 packet_sniffer.py -i eth0 -o my_capture.json
 
 · Installation Guide
 · Usage Examples
-· API Reference
-· Filter Expressions
+
 
 🤝 Contributing
 
@@ -140,7 +139,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 · Scapy - Packet manipulation library
 · Pandas - Data analysis
-· BPF - Packet filtering
 
 📬 Contact
 
