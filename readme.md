@@ -140,11 +140,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 · Scapy - Packet manipulation library
 · Pandas - Data analysis
 
-📬 Contact
-
-· Create an Issue for bug reports
-· Start a Discussion for questions
-
----
-
 ⭐ Star this repository if you find it useful!
