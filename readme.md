@@ -48,13 +48,13 @@ Basic Usage
 sudo python3 packet_sniffer.py --list-interfaces
 
 # Capture on specific interface
-sudo python3 packet_sniffer.py -i eth0
+sudo python3 packet_sniffer.py -i wlan0
 
 # Capture HTTP traffic only
-sudo python3 packet_sniffer.py -i eth0 -f "tcp port 80"
+sudo python3 packet_sniffer.py -i wlan0 -f "tcp port 80"
 
 # Capture 100 packets and save to file
-sudo python3 packet_sniffer.py -i eth0 -c 100 -o capture.json
+sudo python3 packet_sniffer.py -i wlan0 -c 100 -o capture.json
 ```
 
 📊 Example Output
@@ -99,16 +99,16 @@ After capture, the tool generates a comprehensive report:
 
 ```bash
 # Complex BPF filter
-sudo python3 packet_sniffer.py -i eth0 -f "host 192.168.1.100 and tcp port 443"
+sudo python3 packet_sniffer.py -i wlan0 -f "host 192.168.1.100 and tcp port 443"
 
 # Monitor specific subnet
-sudo python3 packet_sniffer.py -i eth0 -f "net 192.168.1.0/24"
+sudo python3 packet_sniffer.py -i wlan0 -f "net 192.168.1.0/24"
 
 # Exclude local traffic
-sudo python3 packet_sniffer.py -i eth0 -f "not arp and not icmp"
+sudo python3 packet_sniffer.py -i wlan0 -f "not arp and not icmp"
 
 # Save to custom file
-sudo python3 packet_sniffer.py -i eth0 -o my_capture.json
+sudo python3 packet_sniffer.py -i wlan0 -o my_capture.json
 ```
 
 📚 Documentation
