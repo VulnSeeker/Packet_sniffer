@@ -1,39 +1,47 @@
 # Contributing Guidelines
 
-## How to Contribute
+First off, thank you for considering contributing to Packet Sniffer! 🎉
 
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Open a Pull Request
+## 📋 How to Contribute
 
-## Development Setup
+1. **Fork** the repository
+2. **Create a feature branch** (`git checkout -b feature/AmazingFeature`)
+3. **Commit** your changes (`git commit -m 'Add some AmazingFeature'`)
+4. **Push** to the branch (`git push origin feature/AmazingFeature`)
+5. **Open a Pull Request**
+
+## 🛠️ Development Setup
 
 ```bash
 # Clone your fork
-git clone https://github.com/your-username/network-packet-sniffer.git
-cd network-packet-sniffer
+git clone https://github.com/VulnSeeker/Packet_sniffer.git
+cd Packet_sniffer
 
 # Create virtual environment
 python3 -m venv venv
-source venv/bin/activate  # Linux/macOS
-# venv\Scripts\activate  # Windows
+
+# Activate it
+source venv/bin/activate      # Linux/macOS
+# venv\Scripts\activate       # Windows
 
 # Install in development mode
 pip install -e .
 ```
 
-Code Style
+📝 Code Style
 
 · Follow PEP 8 guidelines
 · Use meaningful variable names
 · Add comments for complex logic
+· Keep functions focused and small
 · Update documentation for new features
 
-Testing
+🧪 Testing
 
 ```bash
+# Install test dependencies
+pip install pytest flake8
+
 # Run tests
 python -m pytest tests/
 
@@ -41,40 +49,31 @@ python -m pytest tests/
 flake8 packet_sniffer.py
 ```
 
-Pull Request Process
+🔄 Pull Request Process
 
-1. Update the README.md with details of changes
-2. Update the requirements.txt if needed
-3. Ensure all tests pass
+1. Update README.md with details of changes (if needed)
+2. Update requirements.txt if you added dependencies
+3. Ensure all tests pass locally
 4. Get review from at least one maintainer
+5. Wait for merge – we'll review as soon as possible!
 
-```
+🐛 Reporting Issues
 
-## **GitHub Repository Description**
+Found a bug? Have a suggestion?
 
-```
+1. Check if the issue already exists
+2. If not, open a new issue
+3. Include:
+   · Your operating system
+   · Python version (python --version)
+   · Error messages (if any)
+   · Steps to reproduce
 
-Network Packet Sniffer and Analyzer - A powerful Python tool for capturing, analyzing, and visualizing network traffic in real-time. Features include multi-protocol support, security alerts, statistical analysis, and export capabilities. Perfect for network administrators, security professionals, and students.
+💬 Need Help?
 
-```
+· Open an issue with the label question
+· Reach out to maintainers
 
-## **Tags for GitHub**
-```
+---
 
-python, network, security, packet-sniffer, network-analysis, scapy, monitoring, cybersecurity, network-monitoring, traffic-analysis, packet-capture, network-security, forensics, network-tools, python3
-
-```
-
-## **How to Push to GitHub**
-
-```bash
-# Initialize git repository
-git init
-git add .
-git commit -m "Initial commit: Network Packet Sniffer and Analyzer"
-
-# Create repository on GitHub, then:
-git remote add origin https://github.com/yourusername/network-packet-sniffer.git
-git branch -M main
-git push -u origin main
-```
+Thank you for helping make Packet Sniffer better! 🚀
