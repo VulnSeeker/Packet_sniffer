@@ -1,6 +1,6 @@
 # Installation Guide
 
-## Linux (Ubuntu/Debian)
+## 🐧 Linux (Ubuntu/Debian)
 
 ```bash
 # Update system
@@ -13,14 +13,14 @@ sudo apt install python3 python3-pip -y
 sudo apt install libpcap-dev -y
 
 # Clone repository
-git clone https://github.com/yourusername/network-packet-sniffer.git
-cd network-packet-sniffer
+git clone https://github.com/VulnSeeker/Packet_sniffer.git
+cd Packet_sniffer
 
 # Install Python packages
 pip3 install -r requirements.txt
 ```
 
-Linux (RHEL/CentOS/Fedora)
+🐧 Linux (RHEL/CentOS/Fedora)
 
 ```bash
 # Install dependencies
@@ -29,12 +29,12 @@ sudo yum install python3 python3-pip libpcap-devel
 sudo dnf install python3 python3-pip libpcap-devel
 
 # Clone and install
-git clone https://github.com/yourusername/network-packet-sniffer.git
-cd network-packet-sniffer
+git clone https://github.com/VulnSeeker/Packet_sniffer.git
+cd Packet_sniffer
 pip3 install -r requirements.txt
 ```
 
-macOS
+🍎 macOS
 
 ```bash
 # Install Homebrew if not installed
@@ -42,21 +42,42 @@ macOS
 
 # Install dependencies
 brew install python3 libpcap
+
+# Clone repository
+git clone https://github.com/VulnSeeker/Packet_sniffer.git
+cd Packet_sniffer
+
+# Install Python packages
 pip3 install -r requirements.txt
 ```
 
-Windows
+🪟 Windows
 
 1. Install Python 3.6+ from python.org
+   · ✅ IMPORTANT: Check "Add Python to PATH" during installation
 2. Install Npcap from npcap.com
-3. Open Command Prompt as Administrator:
+   · ✅ IMPORTANT: Check "WinPcap API-compatible Mode" during installation
+3. Open Command Prompt as Administrator and run:
 
 ```cmd
+git clone https://github.com/VulnSeeker/Packet_sniffer.git
+cd Packet_sniffer
 pip install -r requirements.txt
 ```
 
-Verify Installation
+1. If Git is not installed, download ZIP from GitHub instead:
+   · Extract folder
+   · Open Command Prompt in that folder
+   · Run: pip install -r requirements.txt
+
+✅ Verify Installation
+
+After installation, test with:
 
 ```bash
+# Linux/macOS
 python3 packet_sniffer.py --help
+
+# Windows
+python packet_sniffer.py --help
 ```
