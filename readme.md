@@ -111,11 +111,6 @@ Keep it inside a folder you created yourself
 Start things off by launching the script through python three, making sure it has full system access. Pick your wireless connection point - wlan zero is what you want here. The results will land in a file named my capture dot j s o n when done.
 ```
 
-📚 Documentation
-
-· Installation Guide
-· Usage Examples
-
 
 🤝 Contributing
 
