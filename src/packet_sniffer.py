@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 """
 Network Packet Sniffer and Analyzer
-Author: Network Security Tool
 Description: Captures and analyzes network packets with protocol details
-Version: 2.0.0
 """
 
 import argparse
